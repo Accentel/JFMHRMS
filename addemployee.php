@@ -509,7 +509,7 @@
 
 														<td align="right"> Adhar Photo</td>
 														<td align="left">
-															<input type="file" name="adharimg" id="adharimg" class="form-control photo-upload" />
+															<input type="file" name="adharimg" id="adharimg" class="form-control photo-upload" accept=".jpg, .jpeg, .png" />
 														</td>
 
 													</tr>
@@ -520,7 +520,7 @@
 														</td>
 														<td align="right"> PAN Card Photo</td>
 														<td align="left">
-															<input type="file" name="panimg" id="panimg" class="form-control photo-upload" />
+															<input type="file" name="panimg" id="panimg" class="form-control photo-upload" accept=".jpg, .jpeg, .png" />
 														</td>
 													</tr>
 													<tr>
@@ -560,7 +560,7 @@
 														</td>
 														<td align="right">Photo</td>
 														<td align="left">
-															<input type="file" name="empimg" id="empimg" class="form-control photo-upload" />
+															<input type="file" name="empimg" id="empimg" class="form-control photo-upload" accept=".jpg, .jpeg, .png" />
 														</td>
 													</tr>
 													<tr>
@@ -625,7 +625,7 @@
 
 																	<td align="right">Photo of Passbook/ Cancelled Cheque</td>
 																	<td align="left">
-																		<input type="file" name="bankimg" id="bankimg" class="form-control photo-upload" />
+																		<input type="file" name="bankimg" id="bankimg" class="form-control photo-upload" accept=".jpg, .jpeg, .png" />
 																	</td>
 																</tr>
 
@@ -761,7 +761,7 @@
 																	</td>
 																	<td align="right">Photo</td>
 																	<td align="left">
-																		<input type="file" name="$fileName15" id="img1" class="form-control photo-upload" />
+																		<input type="file" name="$fileName15" id="img1" class="form-control photo-upload" accept=".jpg, .jpeg, .png" />
 																	</td>
 																</tr>
 
@@ -777,7 +777,7 @@
 																	</td>
 																	<td align="right">Photo</td>
 																	<td align="left">
-																		<input type="file" name="$fileName15" id="img1" class="form-control photo-upload" />
+																		<input type="file" name="$fileName15" id="img1" class="form-control photo-upload" accept=".jpg, .jpeg, .png" />
 																	</td>
 																</tr>
 																<tr>
@@ -792,7 +792,7 @@
 																	</td>
 																	<td align="right">Photo</td>
 																	<td align="left">
-																		<input type="file" name="$fileName15" id="img1" class="form-control photo-upload" />
+																		<input type="file" name="$fileName15" id="img1" class="form-control photo-upload" accept=".jpg, .jpeg, .png" />
 																	</td>
 																</tr>
 																<tr>
@@ -807,7 +807,7 @@
 																	</td>
 																	<td align="right">Photo</td>
 																	<td align="left">
-																		<input type="file" name="$fileName15" id="img1" class="form-control photo-upload" />
+																		<input type="file" name="$fileName15" id="img1" class="form-control photo-upload" accept=".jpg, .jpeg, .png" />
 																	</td>
 																</tr>
 																<tr>
@@ -822,7 +822,7 @@
 																	</td>
 																	<td align="right">Photo</td>
 																	<td align="left">
-																		<input type="file" name="$fileName15" id="img1" class="form-control photo-upload" />
+																		<input type="file" name="$fileName15" id="img1" class="form-control photo-upload" accept=".jpg, .jpeg, .png" />
 																	</td>
 																</tr>
 																<tr>
@@ -837,7 +837,7 @@
 																	</td>
 																	<td align="right">Photo</td>
 																	<td align="left">
-																		<input type="file" name="$fileName15" id="img1" class="form-control photo-upload" />
+																		<input type="file" name="$fileName15" id="img1" class="form-control photo-upload" accept=".jpg, .jpeg, .png" />
 																	</td>
 																</tr>
 
@@ -1015,9 +1015,9 @@ document.querySelectorAll('.photo-upload').forEach(function(input) {
         if (file) {
             const fileType = file.type;
 
-            // Allow only JPEG and PNG formats
+            // Allow only JPG, JPEG and PNG formats
             if (fileType !== 'image/jpeg' && fileType !== 'image/png') {
-                alert('Only JPEG and PNG formats are allowed.');
+                alert('Only JPG, JPEG and PNG formats are allowed.');
                 this.value = ''; // Clear the file input if the format is invalid
                 return;
             }
